@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+    <name>System - Human readable order numbering for Virtuemart</name>
+    <author>NOS - Not Ordinary Software</author>
+    <creationDate>08/2013</creationDate>
+    <copyright>NOS - Not Ordinary Software</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>milan@nosoftware.cz</authorEmail>
+    <authorUrl>http://nosoftware.cz</authorUrl>
+    <version>2.1</version>
+    <description>DESCNOSHRON</description>
+	
+    <files>
+        <filename plugin="nos_vm_order_numbering">nos_vm_order_numbering.php</filename>
+	<filename>index.html</filename>
+	<folder>language</folder>
+    </files>
+
+    <languages folder="language">
+	<language tag="cs-CZ">cs-CZ.plg_system_nos_vm_order_numbering.ini</language>
+	<language tag="cs-CZ">cs-CZ.plg_system_nos_vm_order_numbering.sys.ini</language>
+	<language tag="en-GB">en-GB.plg_system_nos_vm_order_numbering.ini</language>
+	<language tag="en-GB">en-GB.plg_system_nos_vm_order_numbering.sys.ini</language>
+    </languages>
+
+    <params>
+	<param name="@spacer1" type="spacer" default="" />
+	<param name="numbering_pattern" type="list" label="NUMBERING_PATTERN" description="DESCRIPTION_NUMBERING_PATTERN" default="0">
+	  <option value="0">YYYYMMDDNNNN</option>
+	  <option value="1">USER_DEFINED</option>
+	</param>
+	<param name="user_defined" type="text" size="30" label="USER_DEFINED_LABEL" description="DESCRIPTION_USER_DEFINED" default="" />
+    </params>
+    <config>
+	<fields name="params">
+	  <fieldset name="basic">
+	    <field name="spacer1" type="spacer" class="text" label="" />
+	    <field name="numbering_pattern" type="list" label="NUMBERING_PATTERN" description="DESCRIPTION_NUMBERING_PATTERN" default="0">
+		<option value="0">YYYYMMDDNNNN</option>
+		<option value="1">USER_DEFINED</option>
+	    </field>	
+	    <field name="user_defined" type="text" size="30" label="USER_DEFINED_LABEL" description="DESCRIPTION_USER_DEFINED" default="" />
+	  </fieldset>
+	</fields>		
+    </config>
+    <updateservers>
+      <server type="extension" priority="2" name="NOS - Human readable order numbering for Virtuemart updates">http://nosoftware.cz/joomla/virtuemart/nos_vm_order_numbering.xml</server>
+    </updateservers>
+</extension>
+ 
