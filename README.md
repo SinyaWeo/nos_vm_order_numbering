@@ -1,4 +1,4 @@
-nos_vm_order_numbering
+Human readable order numbers plugin for VirtueMart
 ======================
 
-Human readable order numbers plugin for VirtueMart
+Plugin for generating human readable order numbers in VirtueMart.
