@@ -82,6 +82,13 @@ class plgSystemNos_vm_order_numbering extends JPlugin {
 			$newOrderNumber .= $count;
 		      }
 		      break;
+// Code added by Erik van de Wiel - enrikorules@hotmail.com
+// begin
+		    case '-':
+		      // Separator
+		      $newOrderNumber .=  "-";
+		      break;
+// end    
 		  }
 		}
 		$_orderData->order_number = $newOrderNumber;
