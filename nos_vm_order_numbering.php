@@ -7,6 +7,8 @@
 # copyright: Copyright (C) 2013 NOS - Not Ordinary Software
 # @license:  http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
 # Website:   http://www.nosoftware.cz
+# contributors:
+#	     Erik van de Wiel - enrikorules@hotmail.com
 -------------------------------------------------------------------------*/
 
 defined('_JEXEC') or die( 'Direct Access to ' . basename( __FILE__ ) . ' is not allowed.' ) ;
